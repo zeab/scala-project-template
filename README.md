@@ -1,7 +1,4 @@
 ## _Scala Project Template_
-[![Build Status](https://travis-ci.org/zeab/scala-template.svg?branch=master)](https://travis-ci.org/zeab/scala-template)
-------
-
 This is just a project shell that can be saved as a project template to speed up inital development time on new projects. 
 
 ##### **_To Save as Intellij Template_**
