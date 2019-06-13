@@ -1,0 +1,11 @@
+
+# JVM Settings
+
+#-J-Xms2560M
+#-J-Xmx2560M
+#-J-XshowSettings:vm
+#-J-XX:+UseG1GC
+#-J-XX:+UseNUMA
+#-J-XX:+ParallelRefProcEnabled
+#-J-XX:+AlwaysPreTouch
+#-J-XX:+PerfDisableSharedMem
