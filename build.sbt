@@ -4,7 +4,6 @@ import Settings._
 import Dependencies._
 import Docker._
 import ModuleNames._
-import Resolvers.allResolvers
 
 //Sbt Log Level
 logLevel := Level.Info
@@ -16,15 +15,16 @@ lazy val scalaprojecttemplate = (project in file("."))
   .settings(rootSettings: _*)
   .settings(libraryDependencies ++= rootDependencies)
   //.enablePlugins(Artifactory)
+  //.enablePlugins(SonaType)
   .settings(rootDockerSettings)
   .enablePlugins(AshScriptPlugin)
   .enablePlugins(AssemblyPlugin)
-  .settings(allResolvers: _*)
 
 lazy val moduleatemplate = (project in file(moduleAKey))
   .settings(moduleASettings: _*)
   .settings(libraryDependencies ++= moduleADependencies)
   //.enablePlugins(Artifactory)
+  //.enablePlugins(SonaType)
   .settings(moduleADockerSettings)
   .enablePlugins(AshScriptPlugin)
   .enablePlugins(AssemblyPlugin)
@@ -33,6 +33,7 @@ lazy val modulebtemplate = (project in file(moduleBKey))
   .settings(moduleBSettings: _*)
   .settings(libraryDependencies ++= moduleBDependencies)
   //.enablePlugins(Artifactory)
+  //.enablePlugins(SonaType)
   .settings(moduleBDockerSettings)
   .enablePlugins(AshScriptPlugin)
   .enablePlugins(AssemblyPlugin)
